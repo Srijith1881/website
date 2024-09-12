@@ -20,8 +20,7 @@
         *::-webkit-scrollbar-thumb
         {
         background-color: #ea1e1e;
-        background-image: -webkit-linear-gradient(90deg,
-                                                rgba(0, 0, 0, 1) 0%,
+        background-image: -webkit-linear-gradient(90deg,rgba(0, 0, 0, 1) 0%,
                             rgba(0, 0, 0, 1) 25%,
                             transparent 100%,
                             rgba(0, 0, 0, 1) 75%,
@@ -55,7 +54,7 @@
             100px 100px 80px rgba(0, 0, 0, 0.11)
           ;
             width: 70%;
-            height: 20rem;
+            height: 15rem;
             background-color: rgb(216, 15, 15);
             display: flex;
             flex-direction: row;
@@ -63,12 +62,12 @@
             align-items: center;
         }
         .profile-img{
-            width: 50%;
-            height: 100%;
+            
+            height: 95%;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 50%;
+            border-radius: 10%;
         }
         .profile-data{
             width: 50%;
@@ -160,9 +159,9 @@
 
         .companies {
             font-weight: bold;
+            font-size: large;
 
-
-            color: rgb(202, 16, 16);
+            color: rgb(255, 255, 255);
         }
         ol{
             list-style-type: square;
@@ -178,15 +177,7 @@
         /* From Uiverse.io by Zameerahmad01 */ 
 ul {
     list-style: none;
-    background: rgba( 0, 0, 0, 0.05 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5.5px );
--webkit-backdrop-filter: blur( 5.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 10px;
-
-  }
+   }
   
   .example-2 {
     display: flex;
@@ -297,7 +288,7 @@ padding: 10px;
 <body>
     <div class="section1">
         <div class="profile-img">
-            <img src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725926400&semt=ais_hybrid" alt="img" class="profile-img">
+            <img src="./assets/TS-24535.jpg" alt="img" class="profile-img">
         </div>
         
         <div class="profile-data">
@@ -419,25 +410,29 @@ padding: 10px;
                 <tr>
                     <td>SSLC</td>
                     <td>SGNHSS</td>
-                    <td>100%</td>
+                    <td>83.6%</td>
                 </tr>
                 <tr>
                     <td>HSC</td>
                     <td>SGNHSS</td>
-                    <td>100%</td>
+                    <td>75.3%</td>
                 </tr>
                 <tr>
                     <td>UG</td>
                     <td>SIET</td>
-                    <td>100%</td>
+                    <td>7.6 CGPA</td>
                 </tr>
             </table>
             
     </div>
     
     <div class="section4">
-        <br><h1 class="section-title">Internships</h1>
-      <p>Worked as an intern in <span class="companies">Tesla</span> and had gave a huge contribution in company's growth</p>  
+        <br><h1 class="section-title">Courses</h1>
+      <p>Took valueadded  courses like <pre><span class="companies">
+        machine learning from udemy
+        neural networks from unstop
+        Natural language processing from unstop...etc
+      </span></pre></p>  
     </div>
     
     <div class="section5">
@@ -453,4 +448,15 @@ padding: 10px;
     </div>
 </div>
 </body>
-</html>
+<script>
+  console.log("bello")
+  let darray=["hello","hi",false]
+  let detail={
+    name:"srijith",
+    roll:22005,
+    clg:"siet"
+  }
+  console.log(detail)
+  console.log(darray)
+</script>
+</html> 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: repeat(3,300px);
+            grid-gap: 1%;
+            
+        }
+        .r{
+            background-color: red;
+            animation: myanimation 2s ease-in;
+
+        }
+        .b{
+            background-color: blue;
+            grid-row: 3/4;
+            grid-column: -2/-1;
+        }
+        .b:hover{
+            background-color: black;
+            transition: 1s background-color ease-in;
+        }
+        .g{
+            background-color: green;
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        @keyframes myanimation{
+            0%{
+                opacity: 0.1;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            100%{
+                opacity: 1.0;
+            }
+        }
+
+        @media only screen and (max-width:600px){
+            .r{
+                background-color: rgb(144, 88, 88);
+            }
+            .b{
+                background-color: rgb(56, 56, 125);
+                grid-row: 3/4;
+                grid-column: -2/-1;
+            }
+            .g{
+                background-color: rgb(49, 92, 49);
+                grid-row: 2/3;
+                grid-column: 2/3;
+            }
+        }
+        .emoji{
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="r">R</div>
+        <div class="b">G</div>
+        <div class="g">B</div>
+    </div>
+    <div class="emoji">
+        ❤️
+    </div>
+</body>
+</html>
