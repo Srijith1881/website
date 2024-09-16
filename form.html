@@ -48,7 +48,7 @@ background: radial-gradient(circle, rgba(86,8,128,1) 0%, rgba(69,12,78,1) 50%, r
             margin-top: 10px;
             padding: 10px;
             background: rgb(86,8,128);
-background: radial-gradient(circle, rgba(86,8,128,1) 0%, rgba(69,12,78,1) 50%, rgba(0,0,0,1) 100%);
+            background: radial-gradient(circle, rgba(86,8,128,1) 0%, rgba(69,12,78,1) 50%, rgba(0,0,0,1) 100%);
             color: white;
             border: none;
             border-radius: 5px;
@@ -66,7 +66,8 @@ background: radial-gradient(circle, rgba(86,8,128,1) 0%, rgba(69,12,78,1) 50%, r
             <input type="text" placeholder="Name" id="name">
             <input type="email" placeholder="E-mail" id="mailid">
             <input type="password" placeholder="Password" id="password">
-            <input type="number" placeholder="P hone-number" id="number">
+            <input type="number" placeholder="Phone-number" id="number">
+            <input type="number" placeholder="Age" id="age">
             <button type="submit" class="submit-button" onclick="displayData()">SUBMIT</button>
         </form>
     </div>
@@ -77,12 +78,26 @@ background: radial-gradient(circle, rgba(86,8,128,1) 0%, rgba(69,12,78,1) 50%, r
             const email = document.getElementById("mailid").value;
             const password = document.getElementById("password").value;
             const number = document.getElementById("number").value;
-
+            const age = document.getElementById("age").value;
+            const usertype = age<=18 ? "minor" : "major"
+            
+        if (name!== "" && email !=="" && number!==0 && password!=="" && age!==""){
             console.log("Name:", name);
             console.log("Email:", email);
             console.log("Password:", password);
             console.log("Phone Number:", number);
+            console.log("Age:", age);
+            console.log("usertype:", usertype)
+            alert("login successful...!")
+            window.open("sample landing.html")
+
         }
+        else{
+            console.log("Empty field not allowed!")
+        }
+        
+        }
+        
     </script>
 </body>
 </html>
